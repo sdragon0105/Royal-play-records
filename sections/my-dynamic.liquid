@@ -1,0 +1,129 @@
+{% for block in section.blocks %}
+<div class="row {% if block.settings.togglecontent == "left" %}left {% endif %}">
+  <div class="col-1">
+    <h1 style="font-size:43px">{{ block.settings.head }}</h1>
+     <img class="disp" src={{ block.settings.img | img_url:'large' }}/>	
+    <p class="parag">{{ block.settings.ds }}</p>
+  </div>
+  <div class="col-1">
+    <img class="disp1" src={{ block.settings.img | img_url:'large' }}/>				
+  </div>
+</div>
+{% endfor %}
+
+{% schema %}
+
+  {
+    "name": "Section name",
+    "settings": [
+],
+"blocks": [
+      {
+        "type": "quote",
+        "name": "Sections",
+        "settings": [
+          {
+	"id":"head",
+	"label":"Head",
+	"type":"text"
+},
+{
+	"id":"ds",
+	"label":"Discription",
+	"type":"richtext"
+}
+,
+{
+	"id":"img",
+	"label":"Images",
+	"type": "image_picker"
+}
+,
+{
+	"id":"togglecontent",
+	"label":"Toggle",
+	"type": "select",
+	"options": [
+     {
+       "value": "left",
+       "label": "Left"
+     },
+     {
+       "value": "right",
+       "label": "Right"
+     }
+   ],
+	"default": "right"
+}
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+.parag{
+	font-size:15px !important;
+}
+p{
+	font-size:15px !important;
+}
+.row.left {
+flex-direction: row-reverse;
+width:100%
+}
+.disp{
+display:none;
+
+}
+.row.left .col-1 .disp1{
+
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width:100%;
+}
+.col-1{
+	flex-basis: 50%;
+<!-- 	min-width: 300px; -->
+}
+
+.col-1 .disp1{
+padding:30px;
+}
+.col-1 h1 {
+    text-transform: capitalize;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .row{
+      display: block;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width:100%;
+  }
+  .disp {
+      display: block;
+  }
+.col-1 .disp1{
+	display:none;
+   
+}
+.col-1{
+ padding: 10px 25px;
+}
+
+}
+.col-1 h1 {
+	font-size: 38px !important;
+}
+}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

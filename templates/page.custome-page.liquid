@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button click </title>
+    <link rel="stylesheet" href="/css/button.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/53d1f292a0.js" crossorigin="anonymous"></script>
+<style>
+    body{
+        font-family: "Open Sans", sans-serif;
+        background-color: black;
+        color: rgb(255, 255, 255);
+    }
+    .main{
+        box-shadow: 0px -1px 11px 5px #ffffff29;
+        padding-left: 80px;
+        padding-right: 80px; 
+        margin: 50px;
+        /* border: 1px solid; */
+         }
+  span.tooltiptext.tip {
+    top: -150px !important;
+    height: 171px;
+    width: 297px;
+}
+  span.tooltiptext.meta {
+    top: -257px !important;
+}
+  
+  span.tooltiptext.meta.music {
+    height: 246px !important;
+    width: 438px !important;
+    top: -223px !important;
+}
+  span.tooltiptext.meta.top_addons {
+    top: -258px !important;
+}
+  span.tooltiptext.meta.dis {
+    top: -259px !important;
+}
+    
+    .inputbutton{
+        width: 100%;
+    }
+    .heading{
+        color: goldenrod;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 100; 
+        font-size: 49px;
+        line-height: 59px;
+    }
+   
+    .inputbutton{
+        /* padding: 5px; */
+        /* outline: none; */
+        margin-top: 9px;
+        margin-bottom: 40px;
+    }
+
+    .extra{
+        margin-bottom: 2px;
+        width: 850px;
+    }
+  .inputbutton:focus{
+
+    box-shadow: 0px -1px 11px 5px #ffffff29;       
+  }
+
+    input{
+        outline: none;
+        box-shadow: 0px -1px 11px 5px #ffffff29; 
+        padding: 6px;
+    }
+  input:focus{
+    box-shadow: 0px -1px 11px 5px #ffffff29; 
+  
+  }
+    select{
+        outline: none;
+ 		box-shadow: 0px -1px 11px 5px #ffffff29; 
+        padding: 6px;
+
+    }
+  span.tooltiptext.tip.fixed {
+    height: 159px;
+    top: -159px !important;
+}
+    /* 2nd form */
+    .form{
+        box-shadow: 0px -1px 11px 5px #ffffff29;
+    padding: 11px;
+    float: left;
+    width: 29.3%;
+    /* border: 1px solid; */
+    margin-top: 12px;
+    
+}
+    }
+  h1.discount {
+/*     display: none; */
+}
+  span.tooltiptext.meta.dis{
+  
+  
+  }
+
+    /* 3rd part */
+
+    .third-part{
+        box-shadow: 0px -1px 11px 5px #ffffff29;
+    margin-top: 17px;
+    padding: 23px;
+    }
+    .row{
+        display: flex;
+        box-shadow: 0px -1px 11px 5px #ffffff29;
+        margin-top: 12px;
+    }
+    .col-1{
+        width: 50%;
+        padding: 13px;
+    }
+    .textarea{
+        width: 100%;
+    }
+    .check-cart{
+    /* box-shadow: -8px 10px 47px -43px rgba(0,0,0,0.75); */
+    width: 34%;
+    margin-top: -8px;
+    padding: 23px
+    }
+    .cart-button{
+    /* box-shadow: -8px 10px 47px -43px rgba(0,0,0,0.75); */
+    margin-left: 415px;
+    margin-top: 17px;
+    }
+    .button {
+      padding: 13px;
+      outline: none;
+      background-color: rgb(216, 133, 31);
+      color: white;
+      padding: 13px;
+      border: none;
+      cursor: pointer;
+      width: 247px;
+      margin-left: -67px;
+    }
+
+    .button:hover {
+      /* background-color: rgb(145, 168, 16); */
+      color: black;
+
+    }
+    /* .button::before{
+        content: "\f07a\0020";
+    } */
+    .arrow_top{
+        margin-left: 87px;
+    }
+   
+    i.fas.fa-angle-down.arrow_down {
+    display: none;
+}
+     i.fas.fa-angle-down.arrow_down.active {
+    display: block;
+}
+    i.fas.fa-angle-up.arrow_up {
+    display: block;
+}
+     i.fas.fa-angle-up.arrow_up.active {
+    display: none;
+}
+.bt_toggle{
+  	display:none;
+    opacity: 0;
+    -webkit-transition: height 0.5s linear;
+       -moz-transition: height 0.5s linear;
+        -ms-transition: height 0.5s linear;
+         -o-transition: height 0.5s linear;
+            transition: height 0.5s linear, opacity 0.3s linear;
+}
+.bt_toggle.active{
+    display:block;
+    opacity: 1;
+     -webkit-transition: height 0.5s linear;
+        -moz-transition: height 0.5s linear;
+         -ms-transition: height 0.5s linear;
+          -o-transition: height 0.5s linear;
+             transition: height 0.5s linear, opacity 0.8s linear;
+}
+
+.m_notes {
+    width: 225px;
+}
+.note_text{
+    display: none;
+}
+textarea:focus-visible {
+    border: unset;  
+    outline: none;
+    box-shadow: 0px -1px 11px 5px #ffffff29;
+}
+  .list_price{
+    margin-left: 15px;
+  }
+  .price{
+    color: blue;
+    font-size: 15px;
+  }
+  .list_price{
+    display: none;
+  }
+  .list_price.active{
+    display: block;
+  }
+  .list_input{
+    display: none;
+  }
+  .list_input.active{
+    display: block;
+  }
+  .tool_tip{
+  display:none;
+  }
+  i.fas.fa-question-circle:hover + .tool_tip {
+      display: block;
+      position: absolute;
+      top: -50px;
+      border: 1px solid;
+      padding: 4px 20px;
+      background: #000000bd;
+  }
+
+/* media query */
+@media only screen and (max-width: 600px){
+    .main {
+        box-shadow: -8px 10px 47px -43px rgb(0 0 0 / 75%);
+        padding: 36px;
+        margin: -4px;
+        border: 1px solid;
+    }
+    .heading {
+        color: goldenrod;
+        font-family: "Open Sans", sans-serif;
+        font-size: 40px;
+        line-height: 56px;
+        margin-left: 79px;
+    }
+  span.tooltiptext.meta.music {
+    top: -95px !important;
+    width: 289px !important;
+    height: 279px;
+}
+    .extra {
+        margin-bottom: 2px;
+    }
+    .inputfield {
+    margin-left: 34px;
+}
+  span.tooltiptext.meta.top_addons {
+    top: -58px !important;
+    height: 211px;
+}
+  
+  span.tooltiptext.tip.fixed {
+    height: 223px;
+    top: -91px !important;
+}
+  span.tooltiptext.tip {
+    top: -19px !important;
+}
+ 
+  span.tooltiptext.meta {
+    top: -149px !important;
+}
+  span.tooltiptext.meta.dis {
+    top: -105% !important;
+    height: 228px;
+}
+input.inputbutton {
+    margin-bottom: 24px;
+    
+}
+.inputbutton{
+    width: 238px;
+}
+.form {
+    padding: 4px;
+    float: left;
+    width: 289px;
+    margin-top: 12px;
+    /* height: 859px; */
+}
+.m_head {
+    margin-left: 36px;
+}
+.bt_toggle.active {
+    margin-left: 34px;
+}
+input[type="text"] {
+    width: 210px;
+}
+.font_t{
+    font-size: 11px;
+}
+.song_key{
+    width: -webkit-fill-available;
+    margin-left: 2px;
+}
+.s_temp{
+    width: 229px;
+    margin-left: -13px;
+}
+.row{
+    display: block;
+    padding: 26px;
+}
+.col-1 {
+    width: 91%;
+    padding: 0px;
+}
+.third-part {
+    width: 293px;
+}
+.cart-button{
+    margin-left: 82px;
+}
+label.add_order {
+    font-size: 15px;
+}
+ .tooltip.add {
+    margin-top: -21px;
+}
+.m_notes{
+    width: 225px;
+}
+.note_text{
+    display: block;
+}
+.textarea{
+    display: none;
+}
+.inputbutton{
+    width: 222px;
+}
+.s_ads_on{
+    margin-bottom:19px ;
+}
+/* input.s_temp {
+    margin-bottom: 10px;
+} */
+  .tool .tip{
+  	margin-left: -248px !important;
+    width: 209px !important;
+    margin-top: -131px;
+    margin-bottom: 6px;
+  }
+  .add .meta{
+    width: 209px !important;
+    margin-top: -134px !important;
+    margin-left: -54px !important;
+  
+  }
+
+}
+  
+   .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+ 
+/*   span.tooltiptext.tip {
+    top: -150px !important;
+} */
+  span.tooltiptext.meta {
+/*     top: -125px !important; */
+    width: 292px !important;
+    height: 278px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  border:1px solid;
+  width: 590px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -143%;
+  left: 71px;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+/*   margin-left: -5px; */
+/*   border-width: 5px; */
+/*   border-style: solid; */
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+  .common{
+  margin-left: 183px;
+    margin-top: -36px;
+  }
+  
+
+</style>
+</head>
+<body>
+  <form id="add_cart" method="post">
+    <input name="id[]" value="39661902430362" type="hidden" />
+    <div class="main">
+        <h1 class="heading">Mixing & Mastering Purchase Form</h1>
+        <div class="inputfield">
+            <label for=""><span style="color: red;"> *</span>Artist, Band, or Producer Name</label></br>
+            <input class="inputbutton" id="artist" name="properties[producer_name]" type="text" placeholder="Type name here"></br>
+            <label for=""><span style="color: red;"> *</span>How many songs do you need Mixed & Mastered?
+            </label></br>
+            <select style="width: -webkit-fill-available;" name="quantity" id="cars" class="inputbutton extra">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+  			</select></br>
+  {% section 'adons-dynamic' %}
+        </div>
+        <!-- 2nd form field -->
+<h1 style="text-align: center; text-transform: capitalize;" class="discount"><span class="less" id="less"></span>% Discount ACTIVE!</h1>
+  
+<div class="multisong"> 
+	  <div class="form togg">
+    <h1 class="m_head" id="song_selection">Song 1<i onclick="show()" class="fas fa-angle-up arrow_up common "></i><i class="fas fa-angle-down arrow_down common"></i></h1>
+    <div class="bt_toggle">
+      <input name="properties[song_1][song_name]" id="song_name" style="margin-bottom: 33px;" type="text" placeholder="Song name"></br>
+    <select name="properties[song_1][song_track]" style="margin-bottom: 17px; width: -webkit-fill-available;" id="tracks">
+      <option id="tracks" value="track">How many tracks</option>
+  
+    </select></br>
+<!--   <label class="font_t" for="">(How To Count Tracks)</label></br> -->
+<select name="properties[song_1][song_key]" class="song_key" style="margin-top: 15px; margin-bottom: 30px; width: -webkit-fill-available;"  id="cars">
+  <option value="" data-price="" data-rules="" data-rulestype="">
+    Song Key
+  </option>
+  <option
+          value="Ab Minor_0"
+          class="tc-multiple-option tc-select-option"
+          >
+    Ab Minor
+  </option>
+  <option
+          value="Ab Major_1"
+          class="tc-multiple-option tc-select-option"
+          >
+    Ab Major
+  </option>
+  <option
+          value="A Minor_2"
+          class="tc-multiple-option tc-select-option"
+          >
+    A Minor
+  </option>
+  <option
+          value="A Major_3"
+          class="tc-multiple-option tc-select-option"
+          >
+    A Major
+  </option>
+  <option
+          value="A# Minor_4"
+          class="tc-multiple-option tc-select-option"
+          >
+    A# Minor
+  </option>
+  <option
+          value="Bb Minor_5"
+          class="tc-multiple-option tc-select-option"
+          >
+    Bb Minor
+  </option>
+  <option
+          value="Bb Major_6"
+          class="tc-multiple-option tc-select-option"
+          >
+    Bb Major
+  </option>
+  <option
+          value="B Minor_7"
+          class="tc-multiple-option tc-select-option"
+          >
+    B Minor
+  </option>
+  <option
+          value="B Major_8"
+          class="tc-multiple-option tc-select-option"
+          >
+    B Major
+  </option>
+  <option
+          value="Cb Major_9"
+          class="tc-multiple-option tc-select-option"
+          >
+    Cb Major
+  </option>
+  <option
+          value="C Minor_10"
+          class="tc-multiple-option tc-select-option"
+          >
+    C Minor
+  </option>
+  <option
+          value="C Major_11"
+          class="tc-multiple-option tc-select-option"
+          >
+    C Major
+  </option>
+  <option
+          value="C# Minor_12"
+          class="tc-multiple-option tc-select-option"
+          >
+    C# Minor
+  </option>
+  <option
+          value="C# Major_13"
+          class="tc-multiple-option tc-select-option"
+          >
+    C# Major
+  </option>
+  <option
+          value="Db Major_14"
+          class="tc-multiple-option tc-select-option"
+          >
+    Db Major
+  </option>
+  <option
+          value="D Minor_15"
+          class="tc-multiple-option tc-select-option"
+          >
+    D Minor
+  </option>
+  <option
+          value="D Major_16"
+          class="tc-multiple-option tc-select-option"
+          >
+    D Major
+  </option>
+  <option
+          value="D# Minor_17"
+          class="tc-multiple-option tc-select-option"
+          >
+    D# Minor
+  </option>
+  <option
+          value="Eb Minor_18"
+          class="tc-multiple-option tc-select-option"
+          >
+    Eb Minor
+  </option>
+  <option
+          value="Eb Major_19"
+          class="tc-multiple-option tc-select-option"
+          >
+    Eb Major
+  </option>
+  <option
+          value="E Minor_20"
+          class="tc-multiple-option tc-select-option"
+          >
+    E Minor
+  </option>
+  <option
+          value="E Major_21"
+          class="tc-multiple-option tc-select-option"
+          >
+    E Major
+  </option>
+  <option
+          value="D Minor_22"
+          class="tc-multiple-option tc-select-option"
+          >
+    D Minor
+  </option>
+  <option
+          value="D Major_23"
+          class="tc-multiple-option tc-select-option"
+          >
+    D Major
+  </option>
+  <option
+          value="D# Minor_24"
+          class="tc-multiple-option tc-select-option"
+          >
+    D# Minor
+  </option>
+  <option
+          value="Eb Minor_25"
+          class="tc-multiple-option tc-select-option"
+          >
+    Eb Minor
+  </option>
+  <option
+          value="Eb Major_26"
+          class="tc-multiple-option tc-select-option"
+          >
+    Eb Major
+  </option>
+  <option
+          value="E Minor_27"
+          class="tc-multiple-option tc-select-option"
+          >
+    E Minor
+  </option>
+  <option
+          value="E Major_28"
+          class="tc-multiple-option tc-select-option"
+          >
+    E Major
+  </option>
+  <option
+          value="F Minor_29"
+          class="tc-multiple-option tc-select-option"
+          >
+    F Minor
+  </option>
+  <option
+          value="F Major_30"
+          class="tc-multiple-option tc-select-option"
+          >
+    F Major
+  </option>
+  <option
+          value="F# Minor_31"
+          class="tc-multiple-option tc-select-option"
+          >
+    F# Minor
+  </option>
+  <option
+          value="F# Major_32"
+          class="tc-multiple-option tc-select-option"
+          >
+    F# Major
+  </option>
+  <option
+          value="Gb Major_33"
+          class="tc-multiple-option tc-select-option"
+          >
+    Gb Major
+  </option>
+  <option
+          value="G Minor_34"
+          class="tc-multiple-option tc-select-option"
+          >
+    G Minor
+  </option>
+  <option
+          value="G Major_35"
+          class="tc-multiple-option tc-select-option"
+          >
+    G Major
+  </option>
+  <option
+          value="G# Minor_36"
+          class="tc-multiple-option tc-select-option"
+          >
+    G# Minor
+  </option>
+   <option
+        value="dont know"
+        class="tc-multiple-option tc-select-option"
+      >
+        I don’t know
+      </option>
+</select>
+<input name="properties[song_1][song_temp]" class="s_temp" type="text" placeholder="Song tempo/bpm"></br>
+<input name="properties[song_1][check]" class="s_ads_on" type="checkbox" data-target="#price_song_1">
+<label>Show Add-Ons </label><div class="tooltip tool">
+<i style="margin-left: 16px; margin-top: 25px; margin-bottom: 25px;" class="fas fa-question-circle"></i></br>
+<span class="tooltiptext tip">See your options as far as clean versions, show mixes, unlimited revisions, and more!</span>
+  </div>
+<div class="list_price" id="price_song_1">
+  <ul style="margin: 0;">
+      {% for product in collections.all.products %}
+      {% if product.tags contains 'addons' %}
+  		<li>
+        <input class="s_ads_on addons" type="checkbox" name="id[]" value="{{ product.variants.first.id }}" data-price="{{ product.price }}">
+        <label for="vehicle1"> {{ product.title }} <span class="price">{{ product.price | money }}</span></label>
+        <div class="tooltip tool">
+          <i style="margin-left: 16px; margin-top: 3px; margin-bottom: 4px;" class="fas fa-question-circle"></i>
+          <span style="top: -90px; left: 78px;" class="tooltiptext tip fixed">{{ product.description }}</span>
+        </div>
+  		</li>
+      {% endif %}
+      {% endfor %}
+  </ul>
+</div>
+<div style=" margin-bottom: 34px;margin-top: 10px;" class="m-notes">
+  <label for="">Mix Notes</label></br>
+<textarea class="m_notes" style="border: 1px solid" id="w3review" name="properties[song_1][mix_notes]" rows="4" cols="50" placeholder="is there anything you want us to keep in mind while mixing your song?"></textarea></br>
+</div>
+<label for="">Do you need any Custom Mix Versions?</label></br>
+<select style="margin-top: 9px; margin-bottom: 9px; width: -webkit-fill-available;" name="properties[song_1][song_mix_version]" id="cars">
+  <option value="noselected">Non Selected</option>
+  <option value="extra1">1 extra</option>
+  <option value="extra2">2 extra</option>
+  <option value="extra3">3 extra</option>
+</select></br>
+<div class="tooltip add">
+  <i style="margin-left: 16px; margin-top: 25px; margin-bottom: 25px;" class="fas fa-question-circle"></i></br>
+<span class="tooltiptext meta music">Music metadata, which is also commonly referred to as ID3 metadata, is the information embedded in an audio file that is used to identify the content. This data which is in most (if not all) of the files in your digital music library, this gives platforms like Spotify and iTunes the information about your song.</span>
+  </div>
+<input class="add_meta"  type="checkbox" data-target="#input_song_1">
+<label for="vehicle1"> Add meta data</label></br>
+<div class="list_input" id="input_song_1">
+  <input type="text" name="properties[song_1][ISRC]" placeholder="ISRC"></br></br>
+  <input type="text" name="properties[song_1][Comment]" placeholder="Comment"></br></br>
+  <input type="text" name="properties[song_1][Composer]" placeholder="Composer"></br></br>
+  <input type="text" name="properties[song_1][Genre]" placeholder="Genre"></br></br>
+  <input type="text" name="properties[song_1][Year]" placeholder="Year"></br></br>
+</div>
+<div class="tooltip add">
+  <i style="margin-left: 16px; margin-top: 25px; margin-bottom: 25px;" class="fas fa-question-circle"></i></br>
+<span class="tooltiptext meta">You might want another version of your mix that either has certain tracks left out or replaced in your mix (i.e. Just guitars and Bass- or - Just Piano and vocals.) You can describe what you need in a text box that will pop up after selecting how many custom mixes you need. </span>
+  </div>
+<label for="">Do you need any Custom Mix Versions?</label>
+<h2>Mix Reference</h2>
+<p>You can provide us with an artist or particular song that you would like us to consider and reference when mixing your song.</p></br>
+<input name="properties[song_1][song_artist]" type="text" placeholder="Artist and/or Song">
+
+</div>
+</div>
+        
+</div>
+    <div style="clear: both;"></div>
+        <!-- 3rd form part -->
+        <div class="third-part">
+            <div class="row">
+                <div class="col-1">
+                  <h4><span style="color: red;"> *</span>Is this project for a signed artist, record label, or corporately funded project?
+                  </h4>
+                  <p>Projects for signed artists and record labels may be subject to different terms of use. Be sure to read our Terms Of Service before purchasing, especially if you answer yes here.</p></br>
+              <select style=" width: -webkit-fill-available;" name="properties[terms_of_service]" id="tmcp_select_318">
+                <option value="1">I am an unsigned/independent artist </option>
+                <option value="2">Yes ,I am an signed with a major production label</option>
+                   </select></br>                      
+                </div>
+                <div class="col-1">
+                    <h4><span style="color: red;"> *</span>Free Promotion?</h4>
+                    <p>Would you be okay with us showcasing your song in our gallery after its release date? We would, of course, confirm it is released already before posting it.</p>
+                    <input value="yes" id="yes" name="properties[promotion]" type="radio">Yes</br>
+                    <input value="no" id="no" name="properties[promotion]" type="radio">No                   
+                </div>
+                <div class="note_text">
+                    <h3>Notes</h3>
+            <textarea style="width: -webkit-fill-available; height: 100px; box-shadow: 1px 1px 12px 2px #ffffff29;border: 1px solid;"  name="" id="" cols="30" rows="10" placeholder="Feel free to enter any addition comments here"></textarea>
+                </div>
+               
+            </div>
+            <div class="textarea">
+                <h3>Notes</h3>
+            <textarea style="width: -webkit-fill-available; height: 100px; box-shadow: 1px 1px 12px 2px #ffffff29;" name="" id="" cols="30" rows="10" placeholder="Feel free to enter any addition comments here"></textarea>
+            </div>            
+        </div>
+	  <h1 style="text-align: center;text-transform: capitalize;" class="discount" id="discount"><span class="less" id="less"></span>% Discount ACTIVE!</h1>
+        <!-- 4th part -->
+        <!-- <div class="addcart"> -->
+        {% for product in collections.all.products %}
+        {% if product.tags contains 'rush' %}
+            <div class="check-cart">
+                <img src={{'image-name.png' | asset_url}} alt="cart img"></br>
+                <input type="checkbox" class="addons" name="id[]" value="{{ product.variants.first.id }}" data-price="{{ product.price }}">
+                <label class="add_order" for="">Add to order! </label>
+                <div class="tooltip add">
+                  <i style="margin-left: 16px; margin-top: 25px; margin-bottom: 25px;" class="fas fa-question-circle"></i></br>
+                <span class="tooltiptext meta dis">{{ product.description }}</span>
+                </div>  
+            </div>
+        {% endif %}
+        {% endfor %}
+
+        <!-- </div> -->
+
+        <div class="cart-button">
+           {% section 'select-product' %}
+            <button id="add_to_cart_btn" class="button"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+        </div>
+        <div>
+            <p>Category: <span style="color: rgb(145, 168, 16);">Uncategorized</span></p>
+        </div>
+
+    </div>
+</form>
+    <script id="temp" type="text/html">
+      <div class="form togg">
+      <h1 class="m_head" id="song_selection">Song <i><i class="fas fa-angle-up arrow_up common"></i><i class="fas fa-angle-down arrow_down common"></i></h1>
+      <div class="bt_toggle">
+         <input name="properties[<i>][song_name]" style="margin-bottom: 33px;" type="text" placeholder="Song name"></br>
+         <select onchange="track()" style="margin-bottom: 17px;" name="properties[<i>][song_track]" id="tracks">
+            <option id="tracks" value="track">How many tracks</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option><option>41</option><option>42</option><option>43</option><option>44</option><option>45</option><option>46</option><option>47</option><option>48</option><option>49</option><option>50</option><option>51</option><option>52</option><option>53</option><option>54</option><option>55</option><option>56</option><option>57</option><option>58</option><option>59</option><option>60</option><option>61</option><option>62</option><option>63</option><option>64</option><option>65</option><option>66</option><option>67</option><option>68</option><option>69</option><option>70</option><option>71</option><option>72</option><option>73</option><option>74</option><option>75</option><option>76</option><option>77</option><option>78</option><option>79</option><option>80</option><option>81</option><option>82</option><option>83</option><option>84</option><option>85</option><option>86</option><option>87</option><option>88</option><option>89</option><option>90</option><option>91</option><option>92</option><option>93</option><option>94</option><option>95</option><option>96</option><option>97</option><option>98</option><option>99</option><option>100</option>
+         </select>
+         </br>
+         <select class="song_key" style="margin-top: 15px; margin-bottom: 30px; width: -webkit-fill-available;" name="properties[<i>][song_key]" id="cars">
+            <option value="" data-price="" data-rules="" data-rulestype="">
+        Song Key
+      </option>
+      <option
+        value="Ab Minor_0"
+        class="tc-multiple-option tc-select-option"
+      >
+        Ab Minor
+      </option>
+      <option
+        value="Ab Major_1"
+        class="tc-multiple-option tc-select-option"
+      >
+        Ab Major
+      </option>
+      <option
+        value="A Minor_2"
+        class="tc-multiple-option tc-select-option"
+      >
+        A Minor
+      </option>
+      <option
+        value="A Major_3"
+        class="tc-multiple-option tc-select-option"
+      >
+        A Major
+      </option>
+      <option
+        value="A# Minor_4"
+        class="tc-multiple-option tc-select-option"
+      >
+        A# Minor
+      </option>
+      <option
+        value="Bb Minor_5"
+        class="tc-multiple-option tc-select-option"
+      >
+        Bb Minor
+      </option>
+      <option
+        value="Bb Major_6"
+        class="tc-multiple-option tc-select-option"
+      >
+        Bb Major
+      </option>
+      <option
+        value="B Minor_7"
+        class="tc-multiple-option tc-select-option"
+      >
+        B Minor
+      </option>
+      <option
+        value="B Major_8"
+        class="tc-multiple-option tc-select-option"
+      >
+        B Major
+      </option>
+      <option
+        value="Cb Major_9"
+        class="tc-multiple-option tc-select-option"
+      >
+        Cb Major
+      </option>
+      <option
+        value="C Minor_10"
+        class="tc-multiple-option tc-select-option"
+      >
+        C Minor
+      </option>
+      <option
+        value="C Major_11"
+        class="tc-multiple-option tc-select-option"
+      >
+        C Major
+      </option>
+      <option
+        value="C# Minor_12"
+        class="tc-multiple-option tc-select-option"
+      >
+        C# Minor
+      </option>
+      <option
+        value="C# Major_13"
+        class="tc-multiple-option tc-select-option"
+      >
+        C# Major
+      </option>
+      <option
+        value="Db Major_14"
+        class="tc-multiple-option tc-select-option"
+      >
+        Db Major
+      </option>
+      <option
+        value="D Minor_15"
+        class="tc-multiple-option tc-select-option"
+      >
+        D Minor
+      </option>
+      <option
+        value="D Major_16"
+        class="tc-multiple-option tc-select-option"
+      >
+        D Major
+      </option>
+      <option
+        value="D# Minor_17"
+        class="tc-multiple-option tc-select-option"
+      >
+        D# Minor
+      </option>
+      <option
+        value="Eb Minor_18"
+        class="tc-multiple-option tc-select-option"
+      >
+        Eb Minor
+      </option>
+      <option
+        value="Eb Major_19"
+        class="tc-multiple-option tc-select-option"
+      >
+        Eb Major
+      </option>
+      <option
+        value="E Minor_20"
+        class="tc-multiple-option tc-select-option"
+      >
+        E Minor
+      </option>
+      <option
+        value="E Major_21"
+        class="tc-multiple-option tc-select-option"
+      >
+        E Major
+      </option>
+      <option
+        value="D Minor_22"
+        class="tc-multiple-option tc-select-option"
+      >
+        D Minor
+      </option>
+      <option
+        value="D Major_23"
+        class="tc-multiple-option tc-select-option"
+      >
+        D Major
+      </option>
+      <option
+        value="D# Minor_24"
+        class="tc-multiple-option tc-select-option"
+      >
+        D# Minor
+      </option>
+      <option
+        value="Eb Minor_25"
+        class="tc-multiple-option tc-select-option"
+      >
+        Eb Minor
+      </option>
+      <option
+        value="Eb Major_26"
+        class="tc-multiple-option tc-select-option"
+      >
+        Eb Major
+      </option>
+      <option
+        value="E Minor_27"
+        class="tc-multiple-option tc-select-option"
+      >
+        E Minor
+      </option>
+      <option
+        value="E Major_28"
+        class="tc-multiple-option tc-select-option"
+      >
+        E Major
+      </option>
+      <option
+        value="F Minor_29"
+        class="tc-multiple-option tc-select-option"
+      >
+        F Minor
+      </option>
+      <option
+        value="F Major_30"
+        class="tc-multiple-option tc-select-option"
+      >
+        F Major
+      </option>
+      <option
+        value="F# Minor_31"
+        class="tc-multiple-option tc-select-option"
+      >
+        F# Minor
+      </option>
+      <option
+        value="F# Major_32"
+        class="tc-multiple-option tc-select-option"
+      >
+        F# Major
+      </option>
+      <option
+        value="Gb Major_33"
+        class="tc-multiple-option tc-select-option"
+      >
+        Gb Major
+      </option>
+      <option
+        value="G Minor_34"
+        class="tc-multiple-option tc-select-option"
+      >
+        G Minor
+      </option>
+      <option
+        value="G Major_35"
+        class="tc-multiple-option tc-select-option"
+      >
+        G Major
+      </option>
+      <option
+        value="G# Minor_36"
+        class="tc-multiple-option tc-select-option"
+      >
+        G# Minor
+      </option>
+      <option
+        value="dont know"
+        class="tc-multiple-option tc-select-option"
+      >
+        I don’t know
+      </option>
+         </select>
+         <input class="s_temp" name="properties[<i>][song_temp]" type="text" placeholder="Song tempo/bpm"></br>
+         <input class="s_ads_on"  type="checkbox" data-target="#price_<i>">
+         <label for="vehicle1">Show Add-Ons </label>
+         <div class="tooltip tool">
+            <i style="margin-left: 16px; margin-top: 25px; margin-bottom: 25px;" class="fas fa-question-circle"></i></br>
+            <span class="tooltiptext tip">See your options as far as clean versions, show mixes, unlimited revisions, and more!</span>
+         </div>
+         <div class="list_price" id="price_<i>">
+            <ul style="margin: 0;">
+                {% for product in collections.all.products %}
+                {% if product.tags contains 'addons' %}
+                  <li>
+                  <input class="s_ads_on addons" type="checkbox" name="id[]" value="{{ product.variants.first.id }}" data-price="{{ product.price }}">
+                  <label for="vehicle1"> {{ product.title }} <span class="price">{{ product.price | money }}</span></label>
+                  <div class="tooltip tool">
+                    <i style="margin-left: 16px; margin-top: 3px; margin-bottom: 4px;" class="fas fa-question-circle"></i>
+                    <span style="top: -90px; left: 78px;" class="tooltiptext tip fixed">{{ product.description }}</span>
+                  </div>
+                  </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+         </div>
+         <div style=" margin-bottom: 34px;
+            margin-top: 10px;" class="m-notes">
+            <label for="">Mix Notes</label></br>
+            <textarea class="m_notes" style="width: 245px;border: 1px solid" id="w3review" name="properties[<i>][mix_notes]" rows="4" cols="50" placeholder="is there anything you want us to keep in mind while mixing your song?"></textarea></br>
+         </div>
+         <label for="">Do you need any Custom Mix Versions?</label></br>
+         <select style="margin-top: 9px; margin-bottom: 9px; width: -webkit-fill-available;" name="properties[<i>][song_mix_version]"  id="cars">
+            <option value="1">Non Selected</option>
+            <option value="2">1 extra</option>
+            <option value="3">2 extra</option>
+            <option value="4">3 extra</option>
+         </select>
+         </br>
+         <div class="tooltip add">
+            <i style="margin-left: 16px; margin-top: 25px; margin-bottom: 25px;" class="fas fa-question-circle"></i></br>
+            <span class="tooltiptext meta music">Music metadata, which is also commonly referred to as ID3 metadata, is the information embedded in an audio file that is used to identify the content. This data which is in most (if not all) of the files in your digital music library, this gives platforms like Spotify and iTunes the information about your song.</span>
+         </div>
+         <input class="add_meta" type="checkbox" data-target="#input_<i>">
+         <label for="vehicle1"> Add meta data </label></br> 
+         <div class="list_input" id="input_<i>">
+            <input type="text" name="properties[<i>][ISRC]" placeholder="ISRC"></br></br>
+            <input type="text" name="properties[<i>][Comment]" placeholder="Comment"></br></br>
+            <input type="text" name="properties[<i>][Composer]" placeholder="Composer"></br></br>
+            <input type="text" name="properties[<i>][Genre]" placeholder="Genre"></br></br>
+            <input type="text" name="properties[<i>][Year]" placeholder="Year"></br></br>
+         </div>
+         <div class="tooltip add">
+            <i style="margin-left: 16px; margin-top: 25px; margin-bottom: 25px;" class="fas fa-question-circle"></i></br>
+            <span class="tooltiptext meta">You might want another version of your mix that either has certain tracks left out or replaced in your mix (i.e. Just guitars and Bass- or - Just Piano and vocals.) You can describe what you need in a text box that will pop up after selecting how many custom mixes you need. </span>
+         </div>
+         <label for="">Do you need any Custom Mix Versions?</label></br>                
+         <h2>Mix Reference</h2>
+         <p>You can provide us with an artist or particular song that you would like us to consider and reference when mixing your song.</p>
+         </br>
+         <input type="text" name="properties[<i>][song_artist]" placeholder="Artist and/or Song">
+      </div>
+      </div>
+    </script>
+    <script>
+      function test(){
+          if($('.list_price').css('display') == 'none'){
+            $(".list_price").addClass("active")
+          }else{
+            $(".list_price").removeClass("active")
+          }
+      }
+      function test2(){
+      	if($('.list_input').css('display') == 'none'){
+            $(".list_input").addClass("active")
+          }else{
+            $(".list_input").removeClass("active")
+          }
+      }
+      function track(){
+        console.log("enter here")
+        var start = 1;
+        var end = 100;
+        var options = "";
+        for(var year = start ; year <=end; year++){
+          options += "<option>"+ year +"</option>";
+}
+        
+      $('#tracks').append(options);
+      }
+      
+        jQuery(document).ready(function(){
+          console.log(document.querySelector('.multisong').children[0].children[0].children[0].classList.add('active'));
+          console.log(document.querySelector('.multisong').children[0].children[0].children[1].classList.add('active'));
+          console.log(document.querySelector('.multisong').children[0].children[1].classList.add('active'));
+
+          if(jQuery("#cars").val()=="1"){
+            $(".discount").css("display","none");
+          }else{
+            $(".discount").css("display","block");
+          }
+          
+          
+            jQuery("#cars").change(function(){
+              var count = jQuery(this).val();  
+              
+              if(count < 2){
+                console.log(count);
+                
+                $(".discount").css("display","none");
+                
+              }else if(count == 2){
+              	// discount 5
+                $(".discount").css("display","block");
+                jQuery(".less").text('5');
+              }else if(count > 2 && count <5){
+                $(".discount").css("display","block");
+                jQuery(".less").text('10');
+				// 10              
+              }else if(count > 5 && count <10){
+              	$(".discount").css("display","block");
+                jQuery(".less").text('15');
+              }
+              else{
+              	// 15
+                $(".discount").css("display","block");
+                jQuery(".less").text('20');
+              }
+              
+                var dy_temp = jQuery("#temp").html();
+                jQuery(".multisong").empty();
+                for(var i=0; i<count; i++){
+                    var c = i + 1;
+                    console.log(c);
+                    var dy_temp_ = dy_temp.replaceAll('<i>', ''+c);
+                      jQuery(".multisong").append(dy_temp_);                 
+                      if(i == 0) {
+                        // console.log(document.querySelector('.multisong').children[1])
+                      }
+                }
+                
+              console.log(document.querySelector('.multisong').children[0].children[0].children[0].classList.add('active'));
+              console.log(document.querySelector('.multisong').children[0].children[0].children[1].classList.add('active'));
+              console.log(document.querySelector('.multisong').children[0].children[1].classList.add('active'));
+              track();
+              
+              
+            });
+            //jQuery(".form").click(function(){
+            jQuery(document).on('click', '.form h1',function(){
+                jQuery(this).parent('.form').find(".bt_toggle").toggleClass("active");
+            })
+            jQuery(document).on('click', '.form h1',function(){
+                jQuery(this).parent('.form').find(".arrow_down").toggleClass("active");
+            })
+            jQuery(document).on('click', '.form h1',function(){
+                jQuery(this).parent('.form').find(".arrow_up").toggleClass("active");
+            })
+            
+            jQuery("#add_to_cart_btn").click(function(event){
+              event.preventDefault();
+              if($('#artist').val().trim().length == 0){
+              	alert("Can't have empty Artist, Band, or Producer Name.");
+                return;
+              }
+              if($('#song_name').val().trim().length == 0){
+              	alert("Can't have empty song name.");
+                return;
+              }
+              var data = jQuery("#add_cart").serialize();
+              jQuery.ajax({
+                url: '/cart/add',
+                data: data,
+                type:'POST',
+                success: function(result){
+                	window.location.href='/cart';
+                }
+              });
+            });
+//            $(".s_ads_on").click(function(){
+             $(document).on('click', '.s_ads_on', function(){
+             var target_id = jQuery(this).data('target');
+             console.log(jQuery(this).closest('.list_price'));
+               if($(this).prop("checked")){
+                 //                         $(".list_price").addClass("active");
+                 jQuery(target_id).addClass("active");
+               }else{
+                 //                         $(".list_price").removeClass("active");
+                 jQuery(target_id).removeClass("active");
+               }
+                });
+//            $(".add_meta").click(function(){
+           $(document).on('click', '.add_meta', function(){  
+             var target_id = jQuery(this).data('target');
+             if($(this).prop("checked")){
+//                $(".list_input").addClass("active");
+               jQuery(target_id).addClass("active");
+             }else{
+//                $(".list_input").removeClass("active");
+               jQuery(target_id).removeClass("active");
+             }
+           });
+          
+          $(document).on('click', '.addons', function(){
+            calculatePrice();
+          });
+          
+        });
+      
+      function calculatePrice(){
+        var total_price = 0;
+        jQuery(".addons:checked").each(function(){
+            total_price += $(this).data('price');
+        });
+        total_price = total_price / 100;
+        jQuery("#money").html('$'+total_price);
+      }
+      $( document ).ready(function() {
+   
+      var start = 1;
+        var end = 100;
+        var options = "";
+        for(var year = start ; year <=end; year++){
+          options += "<option>"+ year +"</option>";
+        }
+      $('#tracks').append(options);
+// document.getElementById("year").innerHTML = options;
+//  console.log( "ready!" );
+});
+    </script>
+</body>
+</html>

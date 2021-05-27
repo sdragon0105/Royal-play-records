@@ -1,0 +1,577 @@
+{
+  "current": {
+    "color_body_bg": "#000000",
+    "color_headings": "#ffffff",
+    "color_body_text": "#ffffff",
+    "color_borders": "#ffffff",
+    "color_button_text": "#ffffff",
+    "color_primary": "#000000",
+    "color_secondary": "#ffffff",
+    "color_product_background": "#f6f6f6",
+    "color_sale_tag": "#a56600",
+    "color_input": "#060606",
+    "color_newsletter": "#393939",
+    "color_drawer_background": "#1f2021",
+    "color_drawer_text": "#ffffff",
+    "color_drawer_border": "#1f2021",
+    "color_drawer_button": "#333333",
+    "color_drawer_button_text": "#ffffff",
+    "type_header_family": "futura_n4",
+    "type_header_base_size": "30px",
+    "type_header_border_thickness": "1px",
+    "type_accent_family": "futura_n4",
+    "type_accent_transform": true,
+    "type_accent_spacing": true,
+    "type_accent_subheadings": true,
+    "type_base_family": "futura_n4",
+    "type_base_size": "17px",
+    "type_base_italize_titles": true,
+    "cart_type": "page",
+    "cart_notes_enable": false,
+    "social_facebook_link": "https:\/\/facebook.com\/royalplayrecords",
+    "social_twitter_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/instagram.com\/royalplayrecords",
+    "social_snapchat_link": "",
+    "social_google_plus_link": "",
+    "social_tumblr_link": "",
+    "social_youtube_link": "https:\/\/youtube.com\/royalplayrecords",
+    "social_vimeo_link": "",
+    "social_fancy_link": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "favicon": "shopify:\/\/shop_images\/IMG_2240_1_1.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/IMG_2240.PNG",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#000000",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#000000",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#a26b25",
+    "checkout_button_color": "#000000",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/IMG_2240.PNG",
+          "logo_max_width": 190,
+          "header_color": "#ffffff",
+          "transparent_header_enable": false,
+          "transparent_header_color": "#ffffff",
+          "search": "modal",
+          "main_menu_link_list": "main-menu",
+          "drawer_bottom_link_list": "footer",
+          "drawer_search_enable": true,
+          "show_announcement": false,
+          "home_page_only": true,
+          "text": "Announce something here",
+          "color_bg": "#1c1d1d",
+          "color_text": "#ffffff"
+        }
+      },
+      "featured-content": {
+        "type": "featured-content",
+        "settings": {
+          "home_page_full_width": false,
+          "section_title": "",
+          "text": "<p>ROYAL PLAY RECORDS IS A RECORD LABEL FOUNDED BY VINNIE VIDAL.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "show_payment_icons": true,
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "footer_link_list": "footer"
+        }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+          "logo": "",
+          "logo_max_width": "200"
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+          "title": "Renovating",
+          "newsletter_enable": true,
+          "newsletter_form_heading": "Keep tabs to know when we relaunch.",
+          "newsletter_form_subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+          "newsletter_placeholder": "Email address",
+          "newsletter_button_text": "Submit",
+          "show_share_buttons": true,
+          "social_message": "Spread the word"
+        }
+      },
+      "1600267651600": {
+        "type": "slideshow",
+        "blocks": {
+          "1600267651600-0": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_2240_1_2_3__auto_x2_956df3ed-6cc5-4b16-9b35-3015a9f3dde2.png",
+              "image_position": "center center",
+              "image_overlay": false,
+              "image_overlay_opacity": 15,
+              "text_alignment": "center",
+              "slide_heading": "",
+              "slide_subheading": "",
+              "button_label": "",
+              "slide_text_color": "#ffffff",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#1f2021"
+            }
+          }
+        },
+        "block_order": [
+          "1600267651600-0"
+        ],
+        "settings": {
+          "home_hero_height": "adapt",
+          "hero_home_auto": false,
+          "home_hero_auto_speed": 5
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_image": false,
+          "collection_sort_enable": false,
+          "collection_tags_enable": false,
+          "collection_products_grid": "collage",
+          "product_vendor_enable": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "product_vendor_enable": false,
+          "social_sharing_products": false,
+          "bg-image": "shopify:\/\/shop_images\/background.png",
+          "quantity_enabled": false,
+          "product_selector": "radio",
+          "enable_payment_button": false,
+          "add_to_cart_button_size": "small",
+          "media_layout": "stacked",
+          "enable_image_zoom": false,
+          "enable_video_looping": false
+        }
+      },
+      "my-section": {
+        "type": "my-section",
+        "settings": {}
+      },
+      "my-dynamic": {
+        "type": "my-dynamic",
+        "blocks": {
+          "ddaa00c3-18d5-40ca-ac6c-2ade1526bdbe": {
+            "type": "quote",
+            "settings": {
+              "head": "1. Custom Pricing",
+              "ds": "<p>Tip: You can use our form to price your entire project before purchasing – <a href=\"https:\/\/mixstudios.com\/product\/mix-studios-order-form-mixing-form\/\" target=\"_blank\">Here<\/a><\/p><p>We wanted to make pricing as fair as possible. There are many different songs and song types. Each song requires different workloads. Some songs have 100 tracks and some songs may have 10 total tracks. (<a href=\"https:\/\/mixstudios.com\/what-are-tracks\/\" target=\"_blank\">What Are Tracks?<\/a>) We wanted our customers to be able to tailor their cost to exactly what their song needs, per song.<\/p><p>Our pricing is based on the size of your song. In other words, your track count determines the cost of your song. A song with 10 tracks is priced differently than a song with 100 tracks. But, what’s great about our service is that no matter what size your song is, it will always receive complete A – Z treatment. You can read more about included treatments below.<\/p><p>When you’re ready to purchase, you will be directed to our “purchase form”. This form allows you to select every detail about your song(s) and select which options you’d like to include with each specific song if you happen to be purchasing more than one. With this, you’ll be able to tailor your project to fit your budget.<\/p>",
+              "img": "shopify:\/\/shop_images\/Screenshot-2017-07-28-07.25.57_ccc4595a-bd58-443f-b9e0-acd6e6277949.png",
+              "togglecontent": "left"
+            }
+          },
+          "03a08bd4-754a-409f-8e9d-8193d1543390": {
+            "type": "quote",
+            "settings": {
+              "head": "2. Editing",
+              "ds": "<p>As soon as your song files come into our inbox, we download and setup the session. From there, we go through each individual kick, snare, guitar, vocal, etc.. and clean the clicks, pops, hums, and anything else that isn’t suppose to be there!<\/p><p>In this stage we will start to determine if there are any tracks we’d like you to resend or even in some cases re-record. We want to make sure everything we have will contribute to making your song sound great, not worse.<\/p>",
+              "img": "shopify:\/\/shop_images\/save3.png",
+              "togglecontent": "right"
+            }
+          },
+          "a6e805e2-f69c-49d3-a865-128feaace6cb": {
+            "type": "quote",
+            "settings": {
+              "head": "3. Timing Corrections",
+              "ds": "<p>This is where the song really starts to come together, especially songs that were recorded with a full band playing together. First, all the drums are aligned. This sets the base foundation for the rest of the song. All other instruments and vocals are then aligned into the drums. If your song doesn’t have any drums, the most important element will be Time Corrected first and then used as the foundation for everything else.<\/p><p>This can make for a pretty dramatic difference with Before and After at this stage. It can take a song from amateur sounding to sounding professionally performed.<\/p>",
+              "img": "shopify:\/\/shop_images\/Screenshot-2017-07-28-07.25.57_ccc4595a-bd58-443f-b9e0-acd6e6277949.png",
+              "togglecontent": "left"
+            }
+          },
+          "de46c13c-8379-423a-b90f-30dd690d2fea": {
+            "type": "quote",
+            "settings": {
+              "head": "4. Pitch Corrections",
+              "ds": "<p>After everything in your song is aligned and sounding together, we move on to the Pitch and Note Corrections. This includes your vocals, basses, keys, guitars, etc..<\/p><p>Each elements is opened up in one of our various pitch editing programs and tweaked. We are meticulous with this process and use pitch correction with our ears, not our eyes. We never lock any pitch moves to a grid and always consider how everything sounds together, not in isolation.<\/p><p>Light autotune may be used after the initial manual pitch correction process is complete to really lock in the small subtleties. Autotune may also be used an as effect if the sound of the song calls for it!<\/p>",
+              "img": "shopify:\/\/shop_images\/melodynepic2.png",
+              "togglecontent": "right"
+            }
+          },
+          "4f98cf42-5fbd-4a0e-856f-20f8d4da477d": {
+            "type": "quote",
+            "settings": {
+              "head": "5. Drum Replacements",
+              "ds": "<p>In the stage, we listen to the recordings of the drum kit. Are they mic’d correctly? Are they mic’d well? Can we hear the full body of the kick and snare? Can we make them hit and snap?<\/p><p>We determine if the drums need help. Sometimes all we need to do is add another kick and another snare. Sometimes, we need to replace the kick completely. There are times where we feel that the kick and snare supplied sound great but we could really use better Toms or Crashes. At this point we will begin modifying these elements to our satisfaction.<\/p>",
+              "img": "shopify:\/\/shop_images\/Drum-Replacer-Enhance-your-Productions.png",
+              "togglecontent": "left"
+            }
+          },
+          "5bf8273a-3d90-4ecb-ada4-a2eda48ff03e": {
+            "type": "quote",
+            "settings": {
+              "head": "6. Mixing",
+              "ds": "<p>In this step, we do everything we can to make your song sounds the best it can. Our mixing process is in-depth and includes everything you want in a good mix, like punch, clarity, depth, space and separation. We love getting creative, so we always approach your mix asking ourselves what will bring it to life.<\/p><p>We are big on getting a more <strong>analog sound<\/strong>, so we focus on using lots of analog simulation plugins from Softube and UAD. Along with a few analog outboard units, we can really dial in the sound we’re pleased with while still allowing us to be very easily adaptable to revisiting the session later down the line for revisions or changes if requested by the client.<\/p><p><br\/><\/p>",
+              "img": "shopify:\/\/shop_images\/studio_one-song_page.png",
+              "togglecontent": "right"
+            }
+          },
+          "84ca92a8-e9fa-400e-9911-b2c4584e9471": {
+            "type": "quote",
+            "settings": {
+              "head": "7. Mastering",
+              "ds": "<p>When your song is going in for Mastering, you can be assured it’s going to get the final touches it needs and deserves. Our Mastering Engineer’s know the demand and sound for different music around the world. You can expect punchy, clear and exciting results. Every mix is treated with analog shaping techniques, analog plugins and analog converters to give it the final warm low punch it needs.<\/p><p>We also offer Stem Mastering, which allows us to more so “Mix” the very important elements in your song (Acapella and Instrumental) together before proceeding with mastering. This allows for a very effective option for dialing in your sound.<\/p>",
+              "img": "shopify:\/\/shop_images\/mastering5.png",
+              "togglecontent": "left"
+            }
+          },
+          "478ec0ed-b8e7-4492-ad09-9195cab2c453": {
+            "type": "quote",
+            "settings": {
+              "head": "8. Live Stream & Revisions",
+              "ds": "<p>How cool is this?<\/p><p>We can stream your song directly to your studio or even your phone!<\/p><p>As soon as we send you your first mix, we’ll ask you when you’re available for a Live Stream. After we set our date for our live stream, you will then start to take notes of the changes you’d like to hear in your mix. You can then email those revisions back to us so they are ready for our scheduled live stream session.<\/p><p>How it works: Once we’ve set a date, you and your engineer will meet on the Royal Play Records website chat. Your engineer will then send you a link to paste into your browser. That link will connect you to our stream. As your engineer hits play in the DAW, you’ll be hearing your song in real time as well as any changes being made. This is as close as we can get to having you in the studio! It works great and really allows us to wrap up your song to your satisfaction rapidly for a speedy completion!<\/p><p><br\/><\/p>",
+              "img": "shopify:\/\/shop_images\/Screenshot-2017-07-28-06.22.04.png",
+              "togglecontent": "right"
+            }
+          }
+        },
+        "block_order": [
+          "ddaa00c3-18d5-40ca-ac6c-2ade1526bdbe",
+          "03a08bd4-754a-409f-8e9d-8193d1543390",
+          "a6e805e2-f69c-49d3-a865-128feaace6cb",
+          "de46c13c-8379-423a-b90f-30dd690d2fea",
+          "4f98cf42-5fbd-4a0e-856f-20f8d4da477d",
+          "5bf8273a-3d90-4ecb-ada4-a2eda48ff03e",
+          "84ca92a8-e9fa-400e-9911-b2c4584e9471",
+          "478ec0ed-b8e7-4492-ad09-9195cab2c453"
+        ],
+        "settings": {}
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like"
+        }
+      },
+      "block-button": {
+        "type": "block-button",
+        "settings": {
+          "purchase_url": "shopify:\/\/pages\/mixing-mastering"
+        }
+      },
+      "select-product": {
+        "type": "select-product",
+        "settings": {
+          "page_product": "mixing-and-mastering"
+        }
+      },
+      "adons-dynamic": {
+        "type": "adons-dynamic",
+        "settings": {
+          "addons": "<p>You have 1 song selected. The more songs you purchase at once, the higher your discount percentage is! (rates: 5% off 2 songs, 10% off 3-4 songs, 15% off 5-9 songs, and 20% off 10-15 songs!<\/p>"
+        }
+      }
+    },
+    "content_for_index": [
+      "1600267651600",
+      "featured-content"
+    ]
+  },
+  "presets": {
+    "Classic": {
+      "checkout_accent_color": "#a26b25",
+      "checkout_button_color": "#000000",
+      "checkout_error_color": "e32c2b",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_announcement": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "slide",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "slide",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-content": {
+          "type": "featured-content",
+          "settings": {
+            "section_title": "",
+            "text_size": "large"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collections-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-3": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-4": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "featured-collections-0",
+            "featured-collections-1",
+            "featured-collections-2",
+            "featured-collections-3",
+            "featured-collections-4"
+          ],
+          "settings": {}
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "collection_products_grid": "grid"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {}
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-content",
+        "featured-collections",
+        "featured-products",
+        "featured-product",
+        "newsletter"
+      ]
+    },
+    "Playful": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#565656",
+      "color_borders": "#5dd2b4",
+      "color_button_text": "#ffffff",
+      "color_primary": "#7737BD",
+      "color_secondary": "#058677",
+      "color_product_background": "#fff4f6",
+      "color_sale_tag": "#e80970",
+      "color_input": "#f6f6f6",
+      "color_newsletter": "#bde9f2",
+      "color_drawer_background": "#360f5f",
+      "color_drawer_text": "#ffffff",
+      "color_drawer_border": "#50297a",
+      "color_drawer_button": "#7737BD",
+      "color_drawer_button_text": "#ffffff",
+      "color_headings": "#321863",
+      "type_header_family": "quicksand_n7",
+      "type_header_base_size": "38px",
+      "type_header_border_thickness": "1px",
+      "type_accent_family": "roboto_n7",
+      "type_accent_transform": true,
+      "type_accent_spacing": true,
+      "type_accent_subheadings": false,
+      "type_base_family": "helvetica_n4",
+      "type_base_size": "17px",
+      "type_base_italize_titles": false,
+      "cart_type": "drawer",
+      "cart_notes_enable": true,
+      "social_facebook_link": "",
+      "social_twitter_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_snapchat_link": "",
+      "social_google_plus_link": "",
+      "social_tumblr_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "social_fancy_link": "",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fff4f6",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Roboto",
+      "checkout_accent_color": "#7737BD",
+      "checkout_button_color": "#7737BD",
+      "checkout_error_color": "#f01130",
+      "checkout_banner_background_color": "#fff",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_use_header_image": false,
+      "collection_products_grid": "collage",
+      "customer_layout": "customer_area",
+      "favicon_enable": false,
+      "product_vendor_enable": false,
+      "social_sharing_style": "clean",
+      "sections": {
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "1495823280244": {
+              "type": "slide",
+              "settings": {
+                "slide_text_color": "#ffffff",
+                "slide_button_label_color": "#003B34",
+                "slide_button_background_color": "#84D1B2"
+              }
+            }
+          },
+          "block_order": [
+            "1495823280244"
+          ],
+          "settings": {
+            "hero_home_auto": false,
+            "home_hero_auto_speed": 5
+          }
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "home_featured_products": "frontpage",
+            "collection_products_grid": "collage"
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_max_width": 260,
+            "search": "modal",
+            "main_menu_link_list": "main-menu",
+            "show_announcement": false,
+            "color_bg": "#290c49",
+            "color_text": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_link_list": "footer"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "collection_tags_enable": false,
+            "collection_products_grid": "grid",
+            "product_vendor_enable": false
+          }
+        },
+        "1494860348200": {
+          "type": "featured-row",
+          "settings": {
+            "layout": "right"
+          }
+        },
+        "1494894035034": {
+          "type": "featured-row",
+          "settings": {
+            "layout": "left"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "product_vendor_enable": false,
+            "social_sharing_products": true,
+            "enable_image_zoom": false,
+            "enable_video_looping": false
+          }
+        },
+        "1496078102297": {
+          "type": "advanced-content",
+          "blocks": {
+            "1496078102297-0": {
+              "type": "html",
+              "settings": {
+                "code": "<div style=\"text-align:center;\">\n<h1 class=\"h1\">Use HTML to format your text so it can be easily read.<\/h1>This text can be used to share information about your brand with customers.<\/div>",
+                "width": "100%",
+                "alignment": "top-middle"
+              }
+            }
+          },
+          "block_order": [
+            "1496078102297-0"
+          ],
+          "settings": {}
+        },
+        "1496177901425": {
+          "type": "advanced-content",
+          "blocks": {
+            "1496177901425-0": {
+              "type": "html",
+              "settings": {
+                "code": "<div style=\"width:745px;text-align: center; margin: 0 auto;\">This text can be used to share information about your brand with customers.<\/div>",
+                "width": "100%",
+                "alignment": "top-middle"
+              }
+            }
+          },
+          "block_order": [
+            "1496177901425-0"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "1496177901425",
+        "featured-products",
+        "newsletter",
+        "1496078102297",
+        "1494860348200",
+        "1494894035034"
+      ]
+    }
+  }
+}

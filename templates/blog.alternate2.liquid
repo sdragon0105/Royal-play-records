@@ -1,0 +1,133 @@
+<!-- /templates/blog.liquid -->
+{% paginate blog.articles by 5 %}
+
+<div class="grid">
+
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+
+    <header class="section-header text-center">
+      <h1>
+        {% if current_tags %}
+          {{ blog.title | link_to: blog.url }} &mdash; {{ current_tags.first }}
+        {% else %}
+          {{ blog.title }}
+        {% endif %}
+        <a href="{{ shop.url }}{{ blog.url }}.atom" class="icon-fallback-text rss-link">
+          <span class="icon icon-rss" aria-hidden="true"></span>
+          <span class="fallback-text">RSS</span>
+        </a>
+      </h1>
+      <hr class="hr--small">
+    </header>
+
+    <img src="https://cdn.shopify.com/s/files/1/0486/3367/5930/files/ebb39dd3-8f57-4b9a-9db1-b77a506a663e.JPG?v=1606168606">
+    
+    <header class="text-center" style="margin:30px 0px">
+       <h1><em>
+      MOGUL MINDSET MARKETING
+         </em>
+         </h1>
+      </header>
+    
+    {% for article in blog.articles %}
+
+      {% assign article_content = article.excerpt_or_content %}
+
+      <article class="article grid small--text-center">
+
+        {% unless article.image == blank %}
+          <div class="grid__item">
+            <a class="article__featured-image-link" href="{{ article.url }}">
+              <noscript>
+                {{ article.image | img_url: '2048x2048' | img_tag: article.title | escape }}
+              </noscript>
+              <div class="article__featured-image-wrapper" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100}}%;">
+                {% assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+                <img class="article__featured-image lazyload"
+                  src="{{ article.image | img_url: '300x300' }}"
+                  data-src="{{ img_url }}"
+                  data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                  data-aspectratio="{{ article.image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ article.title | escape }}">
+              </div>
+            </a>
+          </div>
+        {% endunless %}
+
+        <div class="grid__item large--two-tenths push--large--one-tenth">
+          <time datetime="{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}" class="date">{{ article.published_at | date: format: 'date' }}</time>
+          <hr class="hr--small hr--left small--hide">
+        </div>
+        <div class="grid__item large--six-tenths push--large--one-tenth">
+          <h2 class="h3"><a class="article__heading-link" href="{{ article.url }}">{{ article.title }}</a></h2>
+          <div class="rte rte--indented-images">
+            {{ article_content | strip_html | truncatewords: 120 }}
+          </div>
+
+          <p>
+            <a href="{{ article.url }}" class="text-link">{{ "Read Now" }} <span class="icon icon-arrow-right" aria-hidden="true"></span></a>
+          </p>
+
+          
+        </div>
+      </article>
+
+      {% unless forloop.last %}<hr class="hr--clear">{% endunless %}
+
+    {% endfor %}
+
+    {% if paginate.pages > 1 %}
+      {% include 'pagination' %}
+    {% endif %}
+
+  </div>
+</div>
+
+
+{% endpaginate %}
+
+<style>
+  #drip-ef-862742640 { font: .875rem/1.5rem sans-serif; width: 50%; margin-left: 25%}
+  #drip-ef-862742640 h3 { font-size: 1.25rem; margin: 0 0 .375rem; }
+  #drip-ef-862742640 > div { margin-bottom: .75rem; }
+  #drip-ef-862742640 fieldset { border: none; margin: 0; padding: 0; }
+  #drip-ef-862742640 legend { margin: 0; padding: 0; }
+  #drip-ef-862742640 input[type="email"],
+  #drip-ef-862742640 input[type="number"],
+  #drip-ef-862742640 input[type="tel"],
+  #drip-ef-862742640 input[type="text"] { margin: 0; padding: .375rem .5625rem; width: 100%; }
+  #drip-ef-862742640 input[type="checkbox"],
+  #drip-ef-862742640 input[type="radio"] { margin: .1875rem .1875rem 0 0; padding: 0; }
+  #drip-ef-862742640 input[type="submit"] { margin: 0; padding: .375rem .5625rem; }
+  #drip-ef-862742640 { font-family:futura; color: white }
+  #drip-ef-862742640 { background: #000000 }
+  #drip-ef-862742640 { text-align:center }
+  #drip-ef-862742640 { border: thin solid #FFFFFF }
+  #drip-ef-862742640 > div { margin-top: .75rem; }
+  #drip-ef-862742640 {margin-top:30px}
+</style>
+
+<form action="https://www.getdrip.com/forms/862742640/submissions" method="post" data-drip-embedded-form="862742640" id="drip-ef-862742640">
+  <div data-drip-attribute="description"><span style="font-family:futura"><u><strong>Royal Play Records Music Newsletter</strong></u><br>
+<br>
+Sign up for FREE tips available only to subscribers!
+<span></span></span></div>
+
+  
+  <div>
+      <label for="drip-email">Email Address</label><br>
+      <input type="email" id="drip-email" name="fields[email]" value="" placeholder="E-mail" style="text-align: center">
+  </div>
+
+
+  <div style="display: none;" aria-hidden="true">
+    <label for="website">Website</label><br>
+    <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="">
+  </div>
+  
+  <div>
+    <input type="submit" value="Sign Up" data-drip-attribute="sign-up-button">
+  </div>
+</form>
+

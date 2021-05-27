@@ -1,0 +1,157 @@
+/* .grid {
+    width: 100% !important;
+} */
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.clearfix {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    list-style: none;
+    width: 850px;
+    gap: 8px;
+}
+
+.clearfix a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: Raleway,sans-serif;
+    font-size: 10px;
+    color: #383838;
+}
+
+.inner-services-container {
+   display: flex; 
+}
+
+.list-item {
+    background: #fff;
+    border-bottom: 1px solid#383838;
+    border-right: 1px solid#383838;
+    margin-bottom: 0;
+}
+
+.bottom {
+    border-bottom: none;
+}
+
+.right {
+    border-right: none;
+}
+
+.services-drop-info {
+    width: 75%;
+}
+
+
+.services-drop-info > strong {
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    transition: 0.3s;
+}
+
+.services-drop-img {
+    position: relative;
+    width: 25%;
+}
+
+.icon-service-main {
+    visibility: visible;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    transition: 0.2s;
+}
+
+.icon-service-drop,
+.services-drop-info {
+    padding: 8px;
+}
+
+.icon-service-drop > .transition-icon {
+    margin-top: 6px;
+}
+
+.services-drop-info > p {
+    margin-top: 8px;
+}
+
+.list-item:hover {
+    background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728);
+    background-repeat: no-repeat;
+}
+
+.list-item:hover .icon-service-main {
+    visibility: hidden;
+}
+
+.list-item:hover strong {
+    color: #fff;
+}
+
+.wrapper {
+    padding: 0 !important;
+}
+
+@media (max-width: 900px ) {
+    .clearfix {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+        width: 850px;
+        gap: 8px;
+    }
+
+    .list-item {
+        width: 94%;
+    }
+}
+
+@media (max-width: 720px ) {
+    .clearfix {
+        display: grid;
+        grid-template-columns: 1fr;
+        list-style: none;
+        width: 850px;
+        gap: 8px;
+    }
+
+    .list-item {
+        width: 94%;
+    }
+
+    .services-drop-info {
+        font-size: 16px;
+        margin-left: 4px;
+    }
+
+    .icon-service-main, .transition-icon {
+        width: 88px;
+    }
+
+    .services-drop-info {
+        padding: 8px;
+    }
+
+    /* .services-drop-info.vocals {
+        padding-left: 5px;
+    }  */
+
+    .services-drop-info.video {
+        padding-left: 3px;
+    }
+
+    .services-drop-info.gift > p {
+        width: 16rem;
+
+    }
+    
+}

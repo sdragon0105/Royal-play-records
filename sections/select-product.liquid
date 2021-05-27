@@ -1,0 +1,17 @@
+{%- assign product = all_products[section.settings.page_product] -%}
+<div>
+  <h2>final total</h2>
+  <h2 id="money">{{ product.price | money }}</h2>
+  <input type="checkbox" checked="true" style="display:none;" value="{{ product.price }}" />
+</div>
+{% schema %}
+  {
+    "name": "Product",
+    "settings": [{
+        "type":"product",
+        "id":"page_product",
+        "label":"Select Product"
+    }]
+  }
+{% endschema %}
+

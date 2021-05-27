@@ -1,0 +1,38 @@
+<div class="section  mysection">
+  <div class="col-1">
+    <h1 style="text-align:center;font-size:43px">The Complete 8 Step Process</h1>
+    <p style="font-size:15px">Below you can read about the <b> complete 8 step process </b> that<b> every song </b>, no matter size or style, goes through when our engineers are tasked with the job of making your song <b> sound great </b>. Each step below is <b> included </b> with every mixing purchase <b> at no additional cost</b>.</p>
+  </div>
+  <div class="col-1" style="text-align:center">
+    <img class="mysecimg" src={{ 'allincludedcircles2.png' | asset_url }}/>				
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "My section",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+.section{
+	margin-top:10px;
+}
+
+.col-1 img{
+margin-top:10px;
+}
+
+@media screen and (max-width: 768px) {
+	.mysecimg{
+		heigh:auto;
+	}
+.section {
+    margin-top: 397px;
+}
+}
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

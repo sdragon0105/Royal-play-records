@@ -1,0 +1,119 @@
+<header class="section-header text-center">
+    <h1>{{ page.title }}</h1>
+    <hr class="hr--small">
+  </header>
+  
+  <div style="text-align: center;" class="rte">
+    {{ page.content }}
+  </div>
+  <div class="card-container">
+    <div class="card">
+        <div class="heading-container acoustic">
+            <h2 id="title">
+                ACOUSTIC
+            </h2>
+            <h2 id="price">
+                $599
+            </h2>
+        </div>
+        <div class="card-body">
+            <div class="body-heading acoustic">
+                <strong>2 Musicians of Your Choice</strong>
+                <p>(E.g. piano & vocalist)</p>
+            </div>
+            <ul class="card-list">
+                <li class="card-item">
+                    <span>Dedicated Producer</span><img alt="check-img" src="https://studiopros.com/images/check-img.png">
+                </li>
+                <li class="card-item">
+                    <span>Mixing & Mastering up to 4 tracks</span><img alt="check-img" src="https://studiopros.com/images/check-img.png">
+                </li>
+            </ul>
+        </div>
+        {% if customer %}
+        <a href="https://royalplayrecords.com/pages/project-submit" id="learnMore">Start Now</a>   
+            {% unless customer.has_account %}
+            <a href="{{ routes.account_register_url }}" id="learnMore">Start Now</a>
+            {% endunless %}
+        {% else %}
+        <a href="{{ routes.account_login_url }}" id="learnMore">Start Now</a> 
+        {% endif %}
+      </div>
+      <div class="card">
+        <div class="heading-container basic">
+            <h2 id="title">
+                BASIC
+            </h2>
+            <h2 id="price">
+                $1395
+            </h2>
+        </div>
+        <div class="card-body">
+            <div class="body-heading basic">
+                <strong>4 Musicians of your choice</strong>
+                <p>(E.g. live drums, live bass, 3-6 guitars, 2-4 keyboard tracks)</p>
+            </div>
+            <ul class="card-list">
+                <li class="card-item">
+                    <span>Dedicated Producer</span><img alt="check-img" src="https://studiopros.com/images/check-img.png">
+                </li>
+                <li class="card-item">
+                    <span>Sketch</span><img alt="check-img" src="https://studiopros.com/images/check-img.png">
+                </li>
+                <li class="card-item">
+                    <span>Mixing & Mastering</span><img alt="check-img" src="https://studiopros.com/images/check-img.png">
+                </li>
+            </ul>
+        </div>
+        {% if customer %}
+        <a href="https://royalplayrecords.com/pages/basic-project-submit" id="learnMore">Start Now</a>   
+            {% unless customer.has_account %}
+            <a href="{{ routes.account_register_url }}" id="learnMore">Start Now</a>
+            {% endunless %}
+        {% else %}
+        <a href="{{ routes.account_login_url }}" id="learnMore">Start Now</a> 
+        {% endif %}
+      </div>
+      <div class="card">
+        <div class="heading-container pro">
+            <h2 id="title">
+                GO PRO!
+            </h2>
+            <h2 id="price">
+                $2033
+            </h2>
+        </div>
+        <div class="card-body">
+            <div class="body-heading pro">
+                <strong>5 Musicians of Your Choice</strong>
+                <p>(E.g. live drums, drum programming or percussion, live bass, 3-6 guitars, 2-4 keyboard tracks)</p>
+            </div>
+            <ul class="card-list">
+                <li class="card-item">
+                    <span>Dedicated Producer</span><img alt="check-img" src="https://studiopros.com/images/check-img.png">
+                </li>
+                <li class="card-item">
+                    <span>Sketch</span><span><img alt="check-img" src="https://studiopros.com/images/check-img.png">
+                </li>
+                <li class="card-item">
+                    <span>Chord Progression</span><img alt="check-img" src="https://studiopros.com/images/check-img.png">
+                </li>
+                <li class="card-item">
+                    <span>Main or 3 Backing Vocals</span><img alt="check-img" src="https://studiopros.com/images/check-img.png">
+                </li>
+                <li class="card-item">
+                    <span>Mixing & Mastering</span><img alt="check-img" src="https://studiopros.com/images/check-img.png">
+                </li>
+            </ul>
+        </div>
+        {% if customer %}
+        <a href="https://royalplayrecords.com/pages/pro-project-submit" id="learnMore">Start Now</a>   
+            {% unless customer.has_account %}
+            <a href="{{ routes.account_register_url }}" id="learnMore">Start Now</a>
+            {% endunless %}
+        {% else %}
+        <a href="{{ routes.account_login_url }}" id="learnMore">Start Now</a> 
+        {% endif %}
+      </div>
+  </div>
+  

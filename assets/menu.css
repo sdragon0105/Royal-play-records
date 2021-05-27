@@ -1,0 +1,131 @@
+.home-menu-container {
+    display: none;
+    transition: all .3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.menu-link {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-clearfix {
+    position: absolute;
+    margin-left: 0 !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    list-style: none;
+    width: 750px;
+    border: 8px solid;
+    background-color: #fff;
+    z-index: 1000;
+    border-image: radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 0%, #D1B464 25%, #5d4a1f 173.5%, #D1B464 100%) 1;
+}
+
+.home-clearfix a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: Raleway,sans-serif;
+    font-size: 10px;
+    color: #383838;
+}
+
+.inner-services-container {
+   display: flex; 
+}
+
+.list-item {
+    background: #fff;
+    padding: 2px;
+    border-bottom: 1px solid#383838;
+    border-right: 1px solid#383838;
+    margin-bottom: 0;
+}
+
+.bottom {
+    border-bottom: none;
+}
+
+.right {
+    border-right: none;
+}
+
+.services-drop-info {
+    padding-left: 2px;
+}
+
+.services-drop-info > .cell-heading {
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    transition: 0.3s;
+    text-align: left !important;
+}
+
+.services-drop-img {
+    position: relative;
+}
+
+.icon-service-main {
+    visibility: visible;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    transition: 0.2s;
+}
+
+.icon-service-drop,
+.services-drop-info {
+    /* padding: 8px; */
+}
+
+.icon-service-drop > .transition-icon {
+    margin-top: 6px;
+}
+
+.services-drop-info > p {
+    margin-top: 8px;
+    text-align: left;
+}
+
+.list-item:hover {
+    background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728);
+    background-repeat: no-repeat;
+}
+
+.list-item:hover .icon-service-main {
+    visibility: hidden;
+}
+
+.list-item:hover .cell-heading {
+    color: #fff;
+}
+
+.menu-link:hover .home-menu-container {
+    display: block !important;
+    transition-duration: 0.5s;
+}
+
+@media (max-width: 750px) {
+    .menu-link:hover .home-menu-container {
+        display: none !important;
+        transition-duration: 0.5s;
+    }
+
+    .menu-link > span {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu-link:hover .home-menu-container {
+        display: none !important;
+        transition-duration: 0.5s;
+    }
+}
+

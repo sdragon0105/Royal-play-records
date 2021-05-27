@@ -1,0 +1,135 @@
+{
+  "sections": {
+    "single-login": {
+      "single": {
+        "login": {
+          "title": "Login",
+          "subtext": "Please use the account created when purchasing your ticket!",
+          "email": "Email",
+          "password": "Password",
+          "sign_in": "Sign In",
+          "forgot_password": "Reset Password",
+          "create_account": "Create Account",
+          "help_header": "Having Issues?",
+          "faq": "Chat & email support available on the FAQ page."
+        },
+        "alert": {
+          "error_heading": "There was an error.",
+          "reset_success": "A reset email will be delivered to your inbox."
+        },
+        "recover_password": {
+          "title": "Reset Your Password",
+          "subtext": "We will send you an email to reset your password.",
+          "submit": "Submit",
+          "cancel": "Cancel"
+        },
+        "collection": {
+          "title": "Need Tickets?"
+        }
+      }
+    },
+    "single-no-ticket": {
+      "single": {
+        "no_ticket": {
+          "title": "...we can't find your ticket",
+          "subtext_1": "If you purchased a ticket, but cannot access this page, you may have used a different email when checking out.",
+          "subtext_2": "Please create account or log in using the email address from your purchase.",
+          "log_out": "Log Out",
+          "help_header": "Having Issues?",
+          "faq": "Chat & email support available on the FAQ page."
+        }
+      }
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
+      }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
+    },
+    "comments": {
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Shopping Cart",
+      "products": "Products",
+      "remove": "Remove",
+      "price": "Price",
+      "quantity": "Quantity",
+      "maximum_quantity": "Maximum Quantity",
+      "total": "Total",
+      "item": "Item",
+      "uploaded_file": "uploaded file",
+      "continue_browsing_html": "There are no items in your cart.",
+      "continue_shopping_link_html": "Continue Shopping",
+      "excluding_tax_shipping": "Excluding tax & shipping",
+      "orders_processed_in_currency_html": "Orders will be processed in {{ currency }}.",
+      "note": "Order Notes",
+      "agree_to_terms_html": "I Agree with the Terms & Conditions",
+      "view_terms": "[View Terms]",
+      "agree_to_terms_warning": "You must agree with the terms and conditions to checkout.",
+      "or": "or",
+      "subtotal": "Subtotal",
+      "discount": "Discount",
+      "update": "Update Subtotal",
+      "checkout": "Checkout",
+      "taxes_and_shipping_at_checkout": "Teaxes and shipping at checkout"
+    },
+    "shipping_calculator": {
+      "estimated_shipping": "estimated shipping",
+      "country": "Country",
+      "province": "Province \/ State",
+      "zip_code": "Zip \/ Postal Code",
+      "heading": "Shipping rates calculator",
+      "submit_button_label": "Calculate shipping rates",
+      "submit_button_label_disabled": "Calculating...",
+      "no_shipping_destination": "We do not ship to this destination.",
+      "at": "at",
+      "available_rates": "There is one shipping rate available for",
+      "additional_rates_part_1": "There are",
+      "additional_rates_part_2": "shipping rates available for",
+      "additional_rates_part_3": "starting at"
+    },
+    "label": {
+      "quantity": "Quantity",
+      "total": "Total"
+    }
+  }
+}

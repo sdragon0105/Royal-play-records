@@ -1,0 +1,41 @@
+
+<div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" data-grid-type="{{ section.settings.collection_products_grid }}">
+    <header class="section-header text-center">
+        <h1>{{ collection.title }}</h1>
+        <hr class="hr--small">
+        {%- if collection.description != blank -%}
+        <div class="grid">
+            <div class="grid__item">
+                <div class="rte">
+                    {{ collection.description }}
+                </div>
+            </div>
+        </div>
+      {%- endif -%}
+    </header>
+      <div class="container">
+          {% for product in collection.products %}
+          {% assign image = product.featured_media.preview_image %}
+        <div class="card">
+            <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
+            <div class="img-container">
+                <a href="{{ product.url }}"><img src="{{ image | img_url: 'large' }}" alt="{{ product.title }}"></a>
+            </div>
+            {{product.price | money_with_currency }}
+            <a id="learnMore" href="{{ product.url }}">Learn More</a>
+        </div>   
+        {% endfor %}
+      </div>
+
+{% schema %}
+{
+    "name": "Customize Service",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo"
+        }
+    ]
+}
+{% endschema %}
