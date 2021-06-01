@@ -1,0 +1,142 @@
+{% include 'aaa_mem_helper' with 'page' %}<!-- /templates/page.liquid -->
+<div class="grid">
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+
+    <header class="section-header text-center">
+      <h1 class="hero__title">{{ section.settings.title }}</h1>
+      <hr class="hr--small">
+    </header>
+
+    <div class="grid">
+      <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="rte rte--nomargin rte--indented-images">
+          {%- comment -%}
+             {{ page.content }}
+          {%- endcomment -%}     
+          <div class="submint submit__contnet ">
+            <div class="hover_bkgr_fricc">
+            <span class="helper"></span>
+            <div>
+              <div class="popupCloseButton">&times;</div>
+                {% assign text_blocks = section.blocks | where: 'type', 'text' %}
+                {% for block in text_blocks %}
+                                    
+                    <div class="row">
+                        <div class="col-1">                           
+                            <img class="disp" src={{ block.settings.content_image | img_url:'large' }}/>	 
+                            <p class="popupCloseButton-richtext" >{{ block.settings.content_richtext }}</p>                           
+                        </div>                       
+                    </div>                    
+                    
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          <div class="submit__review">
+            {% assign review_blocks = section.blocks | where: 'type', 'contact-form' %}                             
+                <div class="row">
+                    <div class="col-1">
+                        {%- comment -%}                          
+                            <img class="disp" src={{ block.settings.reviw_image | img_url:'small' }}/>	 
+                        {%- endcomment -%} 
+                        <select id="pet-select" onchange="myFunction()">
+                            <option value="Empty">Choose an Review..</option> 
+                            {% for block in review_blocks %}
+                                <div {{ block.shopify_attributes }}>                                              
+                                    <option value="{{ block.settings.review_title }}">{{ block.settings.review_title }}</option>                                         
+                                </div>
+                            {% endfor %}          
+                        </select>
+
+                        {% for block in review_blocks %}
+                            <div class="{{ "review_content"  | append: forloop.index }}">
+                                <a href="{{ block.settings.review_action }}">
+                                    <img class="disp" src={{ block.settings.review_image | img_url: '200x' }}/>  
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>                       
+                </div>  
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Submit page",
+    "settings": [
+      {        
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Submit Header Title"        
+      } 
+    ],
+    "blocks" : [
+      {
+        "type": "text",
+        "name": "Main Content",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "content_image",
+            "label": "Content logo"
+          },
+          {
+            "type": "richtext",
+            "id": "content_richtext",
+            "label": "Text"
+          }
+        ]
+      },
+      {
+        "type": "contact-form",
+        "name": "Get Reviewed",
+        "settings": [
+          {        
+            "type": "text",
+            "id": "review_title",
+            "label": "Heading",
+            "default": "Review Title"        
+          }, 
+          {
+            "type": "image_picker",
+            "id": "review_image",
+            "label": "Review Image"
+          },
+          {
+            "type": "url",  
+            "id": "review_action",           
+            "label": "Review link"
+          }       
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+<script>
+    function myFunction() {        
+        var x = document.getElementById("pet-select").value;
+        if(x=="Empty") {
+            document.querySelector('.review_content1').style.display="none";
+            document.querySelector('.review_content2').style.display="none";
+        }
+
+        if(x=="VIP Skip the line"){
+            document.querySelector('.review_content1').style.display="block";
+            document.querySelector('.review_content2').style.display="none";
+        } 
+        
+        if(x=="Free Review"){
+            document.querySelector('.review_content1').style.display="none";
+            document.querySelector('.review_content2').style.display="block";
+        }
+    }
+</script>
