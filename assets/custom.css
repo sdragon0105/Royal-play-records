@@ -67,18 +67,21 @@ html, body {
 }
 /* Popup box BEGIN */
 
-.popupCloseButton-richtext{
+.popupCloseButton-contnet p, .popupCloseButton-richtext{
   margin-bottom: 0px !important;
 }
 .submit__review{
   display: block;
   text-align: center;
 }
-.review_content1{
-  display: none;
+
+.review_content{
+  display: block;
   padding-top: 20px;
 }
-.review_content2{
-  display: none;
-  padding-top: 20px;
+
+.submit__review--content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
