@@ -85,3 +85,6 @@ html, body {
   flex-direction: row;
   justify-content: space-evenly;
 }
+.submit-header, .submit-header .text-center {
+  margin: 0 !important;
+}

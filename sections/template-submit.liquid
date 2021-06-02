@@ -1,68 +1,62 @@
 {% include 'aaa_mem_helper' with 'page' %}<!-- /templates/page.liquid -->
-<div class="grid">
-  <div class="grid__item large--five-sixths push--large--one-twelfth">
+<div class="grid">  
 
-    <header class="section-header text-center">
+    <header class="section-header text-center submit-header">
       <h1 class="hero__title">{{ section.settings.title }}</h1>
       <hr class="hr--small">
+      {% if section.blocks.size != 0 %}
+        <div class="grid">
+          <div class="grid__item">
+            <div class="rte">
+              {%- comment -%}
+                {{ page.content }}
+              {%- endcomment -%} 
+                 
+                <div class="submint submit__contnet ">
+                  <div class="hover_bkgr_fricc">
+                  <span class="helper"></span>
+                  <div>
+                    <div class="popupCloseButton">&times;</div>
+                      {% assign text_blocks = section.blocks | where: 'type', 'text' %}
+                      {% for block in text_blocks %}                                    
+                        <div class="row">
+                          <div class="col-1 popupCloseButton-contnet">                           
+                            <img class="disp" src={{ block.settings.content_image | img_url: '200x', format: 'jpg'}}>	 
+                            <p class="popupCloseButton-richtext" >{{ block.settings.content_richtext }}</p>                           
+                          </div>                       
+                        </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+                
+                {%- comment -%}                
+                <div class="submit__review">
+                  {% assign review_blocks = section.blocks | where: 'type', 'contact-form' %}                             
+                  <div class="row">
+                    <div class="submit__review--content">
+                      {% for block in review_blocks %}
+                        <div class="review_content">
+                          <a href="{{ block.settings.review_action }}">                      
+                            <img class="disp" src={{ block.settings.review_image | img_url: '150x' }}/>                        
+                          </a>
+                        </div>
+                      {% endfor %}
+                    </div>                      
+                  </div>  
+                </div> 
+                {%- endcomment -%}
+                {{ page.content }}
+            </div>            
+          </div>
+        </div>  
+      {% endif %}
+
     </header>
 
-    <div class="grid">
-      <div class="grid__item large--four-fifths push--large--one-tenth">
-        <div class="rte rte--nomargin rte--indented-images">
-          {%- comment -%}
-             {{ page.content }}
-          {%- endcomment -%}     
-          <div class="submint submit__contnet ">
-            <div class="hover_bkgr_fricc">
-            <span class="helper"></span>
-            <div>
-              <div class="popupCloseButton">&times;</div>
-                {% assign text_blocks = section.blocks | where: 'type', 'text' %}
-                {% for block in text_blocks %}                                    
-                  <div class="row">
-                    <div class="col-1 popupCloseButton-contnet">                           
-                      <img class="disp" src={{ block.settings.content_image | img_url: '200x', format: 'jpg', scale: 2 }}>	 
-                      <p class="popupCloseButton-richtext" >{{ block.settings.content_richtext }}</p>                           
-                    </div>                       
-                  </div>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-
-          <div class="submit__review">
-            {% assign review_blocks = section.blocks | where: 'type', 'contact-form' %}                             
-            <div class="row">
-              <div class="submit__review--content">
-                {%- comment -%}                          
-                  <img class="disp" src={{ block.settings.reviw_image | img_url:'small' }}/>	 
-                 
-                  <select id="pet-select" onchange="myFunction()">
-                    <option value="Empty">Choose an Review..</option> 
-                    {% for block in review_blocks %}
-                      <div {{ block.shopify_attributes }}>                                              
-                        <option value="{{ block.settings.review_title }}">{{ block.settings.review_title }}</option>                                         
-                      </div>
-                    {% endfor %}          
-                  </select>
-                {%- endcomment -%}
-                {% for block in review_blocks %}
-                  <div class="review_content">
-                    <a href="{{ block.settings.review_action }}">                      
-                      <img class="disp" src={{ block.settings.review_image | img_url: '150x' }}/>                        
-                    </a>
-                  </div>
-                {% endfor %}
-              </div>                      
-            </div>  
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
+    <div></div>
+    
+  
 </div>
 
 {% schema %}
